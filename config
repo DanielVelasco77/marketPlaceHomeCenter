@@ -5,3 +5,9 @@
 	logallrefupdates = true
 	symlinks = false
 	ignorecase = true
+[remote "azure"]
+	url = https://marketplace-homecenter.scm.azurewebsites.net:443/marketplace-homecenter.git
+	fetch = +refs/heads/*:refs/remotes/azure/*
+[branch "master"]
+	remote = azure
+	merge = refs/heads/master
